@@ -1,0 +1,41 @@
+BookConfig:
+  # WithItemFlag / WithoutItemFlag
+  # WithItemFlag = Displays the attributes.
+  # WithoutItemFlag = Hides the author and attributes.
+  Type: 'WithoutItemFlag'
+  # Inventory position. (1-36)
+  Position: 9
+  # Change the uthor, title and lore of the book to your liking.
+  # Variables:
+  # {player} get name of the player.
+  BookMeta:
+    DisplayAuthor: '&dBy ElSheriff'
+    DisplayTitle: '&aServer Rules'
+    DisplayLore:
+      - '&bThis is a test text.'
+      - '&bModify it to your liking in the configuration.'
+  Effects:
+    - ''
+  # If you do not want any sound, leave this option empty.
+  Sounds:
+    - 'ENTITY_CHICKEN_EGG'
+  Disable:
+    InteractBook: true
+    PlaceBook: true
+    DropBook: true
+  GiveBook:
+    OnPlayerJoin: true
+    OnPlayerRespawn: true
+  # Variables:
+  # {player} get name of the player.
+BookData:
+  ==: org.bukkit.inventory.ItemStack
+  type: WRITTEN_BOOK
+  meta:
+    ==: ItemMeta
+    meta-type: BOOK_SIGNED
+    title: Title
+    author: Author
+    pages:
+    - "&7This book was written by himself &6md_5"
+    generation: 0

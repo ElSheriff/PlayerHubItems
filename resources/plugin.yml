@@ -1,0 +1,37 @@
+main: com.github.ElSheriff.PlayerHubItems.Main
+version: 3.0
+author: ElSheriff
+name: PlayerHubItems
+description: Give your players a head that can perform a command, and a book.
+commands:
+    playerhubitems:
+      description: This is the main plugin command.
+      aliases: [phi]
+permissions:
+  phi.book.join:
+    description: He gives the player book when entering.
+    default: op
+  phi.book.respawn:
+    description: He gives the player book when respawn.
+    default: op
+  phi.book.bypass:
+    description: Bypass the restrictions of the book.
+    default: op
+  phi.head.join:
+    description: He gives the player head when entering.
+    default: op
+  phi.head.respawn:
+    description: He gives the player head when respawn.
+    default: op
+  phi.head.bypass:
+    description: Bypass the restrictions of the head.
+    default: op
+  phi.command.book:
+    description: Gives access to the command /phi book
+    default: op
+  phi.command.head:
+    description: Gives access to the command /phi head
+    default: op
+  phi.command.reload:
+    description: Gives access to the command /phi reload
+    default: op

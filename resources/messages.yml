@@ -1,0 +1,6 @@
+MessagesConfig:
+  ReloadConfig: '&aConfiguration files reloaded successfully!'
+  GetHead: '&aYou have been given your head.'
+  GetBook: '&aYou have been give the book'
+  SaveBook: '&aThe book in your hand has been saved to &dbook.yml'
+  SaveBookError: '&cError: &fThe material you have on hand, is not a book.'

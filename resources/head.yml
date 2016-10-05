@@ -1,0 +1,32 @@
+HeadConfig:
+  # WithItemFlag / WithoutItemFlag
+  # WithItemFlag = Displays the attributes.
+  # WithoutItemFlag = Hides the attributes.
+  Type: 'WithItemFlag'
+  # Inventory position. (1-36)
+  Position: 1
+  # Change the name and lore of the head to your liking.
+  # Variables:
+  # {player} get name of the player.
+  ItemMeta:
+    DisplayName: '&aHead of &6{player}'
+    DisplayLore:
+      - '&bThis is a test text.'
+      - '&bModify it to your liking in the configuration.'
+  HeadCommand:
+    # If you want the console command is executed, or the player.
+    ByConsole: true
+    Command: 'me My name is {player}'
+  # If you do not want any effect, leave this option empty.
+  Effects:
+    - ''
+  # If you do not want any sound, leave this option empty.
+  Sounds:
+    - 'ENTITY_CHICKEN_EGG'
+  Disable:
+    InteractHead: true
+    PlaceHead: true
+    DropHead: true
+  GiveHead:
+    OnPlayerJoin: true
+    OnPlayerRespawn: true
